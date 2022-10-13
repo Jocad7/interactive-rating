@@ -30,8 +30,20 @@ function Frontcontent ({container, icon, question, text, options}) {
     // in this part i use propagation event for the container just to my buttons and the submit button targeting his class.
     container.addEventListener('click',(e)=>{
         if(e.target && e.target.classList.contains("buttonOption")) {
-            selectedOption = [e.target.innerHTML, options.length]
+            const buttons = document.querySelectorAll('.buttonOption');
+            selectedOption = [e.target.innerHTML, buttons.length]
+            
             console.log(`The selected option is: ${selectedOption[0]}`);
+            
+            let validation = e.target.classList.contains('active');
+            if(!validation) {
+                buttons.forEach(bton=> bton.classList.remove('active'))
+                e.target.classList.add('active');
+            } else {
+                e.target.classList.remove('active');
+                selectedOption =[];
+            }
+            
         };
         if(e.target && e.target.classList.contains('submitBtn')) {
             //back card content
