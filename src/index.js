@@ -40,7 +40,7 @@ function Frontcontent ({container, icon, question, text, options}) {
             container: backCard,
             img:'./images/illustration-thank-you.svg',
             subT: 'Thank you!',
-            text: 'We appreciate you taking the time to give a rating. \nIf you ever need mor suport. Don\'t hesitate to get in touch!',
+            text: 'We appreciate you taking the time to give a rating. \nIf you ever need more suport. Don\'t hesitate to get in touch!',
         })
         card.classList.add('rotate-card')
         
