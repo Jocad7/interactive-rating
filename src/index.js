@@ -13,6 +13,7 @@ function Frontcontent ({container, icon, question, text, options}) {
     div.classList.add('iconStar-container');
     const iconStar = document.createElement('img');
     iconStar.setAttribute('src', icon);
+    iconStar.setAttribute('alt', 'icon');
     iconStar.setAttribute('style','width: 15px')
     const title = document.createElement('h1');
     const parraf = document.createElement('p');
