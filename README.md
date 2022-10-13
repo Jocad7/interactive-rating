@@ -12,15 +12,14 @@ $\color[RGB]{54,148,77} $
 
 
 ### $\color[RGB]{54,148,77}Built$ $\color[RGB]{54,148,77}with$
-- Semantic HTML5 markup
+- Javascript
 - CSS custom properties
 - Flexbox
 
 ### $\color[RGB]{54,148,77} What$ $\color[RGB]{54,148,77} I$ $\color[RGB]{54,148,77} learned$
-
-- Basic positioning in html
-- How to make a "bubble text dialog" with css
-- Some practice with js.
+- Estructure most of the html with JS
+- Practice with some animations
+- A bit of 3d animation with CSS (i take references to make the card effect from this [project](https://codepen.io/jrgm0005/pen/zzJzxm))
 
 
 ## $\color[RGB]{54,148,77} Author $

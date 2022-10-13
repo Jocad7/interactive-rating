@@ -21,17 +21,40 @@ body {
     background-color: var(--Very-Dark-Blue);
 }
 main {
-    display: inline-flex;
-    flex-direction: column;
     position: absolute;
+    perspective: 1000px;
     width: 410px;
-    background-color: var(--Dark-Blue);
-    border-radius: 20px;
-    padding: 25px;
-    overflow: hidden;
+    height: 350px;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%
+}
+.card {
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;     
+}
+
+.rotate-card {
+    transform: rotateY(180deg);
+}
+
+section div.front,
+section div.back {
+    display: inline-flex;
+    flex-direction: column;
+    width: 410px;
+    height: 350px;
+    background-color: var(--Dark-Blue);
+    border-radius: 20px;
+    padding: 25px;
+    overflow: hidden;   
+}
+section div.back {
+    transform: rotateY(180deg);
+}
+.visibility {
+    position: absolute;
+    backface-visibility: hidden;
 }
 .iconStar-container {
     display: flex;
@@ -49,7 +72,7 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
-main p{
+.front p{
     color: var(--Light-Grey);
     font-weight: 400;
 }
@@ -61,11 +84,17 @@ main p{
     background-color: var(--Dark-Blue2);
     font-weight: 700;
     color: var(--Medium-Grey);
+    cursor: pointer;
 }
 .option-container .buttonOption:hover {
     background-color: var(--Light-Grey);
     color: var(--White);
     transition: background-color 2s;
+}
+.option-container .buttonOption:focus{
+    background-color: var(--Orange);
+    color: var(--White);
+    box-shadow: 0px 0px 2px .7px var(--White);
 }
 .submitBtn {
     background-color: var(--Orange);
@@ -73,12 +102,14 @@ main p{
     border: none;
     border-radius: 20px;
     height: 40px;
+    width: 100%;
     font-weight: 700;
     letter-spacing: 2.3px;
 }
 .submitBtn:hover {
     background-color: var(--White);
     color: var(--Orange);
+    box-shadow: 0px 0px 2px .7px var(--White);
     transition: background-color 2s;
 }
 .submitBtn:active,
@@ -88,8 +119,37 @@ main p{
 .option-container,
 .submitBtn,
 h1,
-main p {
+.front p {
     margin-top: 20px;
+}
+.back {
+    align-items: center;
+    gap: 20px;
+}
+.backCard-img {
+    margin-top: 20px;
+}
+.backCard-result {
+    display: flex;
+    width: 50%;
+    height: 25px;
+    color: var(--Orange);
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Dark-Blue2);
+    border-radius: 12px;
+
+}
+.back h2 {
+    color: var(--White);
+}
+.back p {
+    color: var(--Medium-Grey);
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 35px;
 }
 footer {
     color: var(--Medium-Grey);
@@ -98,4 +158,9 @@ footer {
     width: 100%;
     bottom: 0;
     text-align: center;
+}
+footer a {
+    color: var(--White);
+    text-decoration: none;
+    font-weight: 700;
 }
