@@ -2,8 +2,8 @@
 Frontend mentor challenge, Interactive rating component.
 
 <kbd>
-  <a href="">
-    <img src="./assets/screenshot.png" width="350px" height="350px "alt="screenshot">
+  <a href="https://interactive-rating-theta.vercel.app">
+    <img src="./screenshot.png" width="600px" height="350px "alt="screenshot">
   </a>
 </kbd>
 
@@ -24,6 +24,6 @@ $\color[RGB]{54,148,77} $
 
 ## $\color[RGB]{54,148,77} Author $
 
-- Website - [Live website]()
+- Website - [Live website](https://interactive-rating-theta.vercel.app)
 - Frontend Mentor - [@Jocad7](https://www.frontendmentor.io/profile/Jocad7)
 
